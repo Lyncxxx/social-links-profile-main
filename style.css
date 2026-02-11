@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+:root {
+    --primary-font: 'Inter';
+    --font-color1: hsl(0, 0%, 100%);
+    --font-color2: hsl(75, 94%, 57%);
+    --bg-color1: hsl(0, 0%, 8%);
+    --bg-color2: hsl(0, 0%, 12%);
+    --bg-color3: hsl(0, 0%, 20%);
+}
+
+* {
+    padding: 0px;
+    margin: 0px;
+    font-family: var(--primary-font);
+}
+
+body {
+    background-color: var(--bg-color1);
+    line-height: 1.7em;
+}
+
+main {
+    background-color: var(--bg-color2);
+    color: var(--font-color1);
+    width: 300px;
+    height: 550px;
+    text-align: center;
+    padding: 20px;
+    position: absolute;
+    border-radius: 10px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+main h2 {
+    font-weight: 500;
+}
+
+main img {
+    border-radius: 50%;
+    width: 100px;
+}
+
+main p#location {
+    color: var(--font-color2);
+    font-weight: 600;
+}
+
+main a, li {
+    color: var(--font-color1);
+    text-decoration: none;
+    list-style-type: none;
+    padding: 10px;
+    margin: 17px;
+    border-radius: 8px;
+    background-color: var(--bg-color3);
+}
+
+p {
+    padding-bottom: 15px;
+}
+
+.attribution {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    color: white;
+}
