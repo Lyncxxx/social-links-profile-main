@@ -34,8 +34,9 @@ main {
     transform: translate(-50%, -50%);
 }
 
-main h2 {
+main h1 {
     font-weight: 500;
+    font-size: 24px;
 }
 
 main img {
@@ -46,6 +47,7 @@ main img {
 main p#location {
     color: var(--font-color2);
     font-weight: 600;
+    font-size: 13px;
 }
 
 main a, li {
