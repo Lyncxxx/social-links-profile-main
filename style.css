@@ -10,14 +10,17 @@
 }
 
 * {
-    padding: 0px;
-    margin: 0px;
+    padding: 0em;
+    margin: 0em;
     font-family: var(--primary-font);
 }
 
 body {
     background-color: var(--bg-color1);
     line-height: 1.7em;
+    display: grid;
+    grid-template-rows: 1fr 20px;
+    height: 100vh;
 }
 
 main {
@@ -26,12 +29,13 @@ main {
     width: 300px;
     height: 550px;
     text-align: center;
-    padding: 20px;
+    padding: 1.25em;
     position: absolute;
     border-radius: 10px;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    grid-row: 1/2;
 }
 
 main h1 {
@@ -44,7 +48,7 @@ main img {
     width: 100px;
 }
 
-main p#location {
+main p.location {
     color: var(--font-color2);
     font-weight: 600;
     font-size: 13px;
@@ -54,20 +58,19 @@ main a, li {
     color: var(--font-color1);
     text-decoration: none;
     list-style-type: none;
-    padding: 10px;
-    margin: 17px;
+    padding: 0.625em;
+    margin: 1.13em;
     border-radius: 8px;
     background-color: var(--bg-color3);
 }
 
 p {
-    padding-bottom: 15px;
+    padding-bottom: 0.66em;
 }
 
-.attribution {
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    color: white;
+.attribution { font-size: 11px; text-align: center; color: white;}
+.attribution a { color: hsl(228, 45%, 44%); }
+
+footer {
+    grid-row: 2/3;
 }
